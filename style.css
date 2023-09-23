@@ -1,0 +1,39 @@
+/* Asterisk applies formatting to all elements */
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex; /*flexbox - like a table*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /*vh is a unit relative to 1% of the height of the viewport (browser window size)*/
+    color: black;
+}
+
+#time{
+    font-size: 8rem; /*rem is relative to font-size of the 'root element'*/
+}
+
+h1{
+    font-size: 2rem;
+}
+
+div.transbox {
+    padding: 5%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    border-radius: 25px;
+}
+
+/*If the window width is less than max-width, decrease the font size of time*/
+@media (max-width: 800px){
+    #time{
+        font-size: 5rem;
+    }
+}
